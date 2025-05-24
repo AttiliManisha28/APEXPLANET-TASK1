@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #FFEFD5;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .center-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 60%; 
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .centered-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2F4F4F;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ADD8E6;
+        }
+
+        a {
+            color: #6c63ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <p>This is a beginner-friendly webpage built with HTML, CSS, and JavaScript.</p>
+    </header>
+
+    <section>
+        <div class="center-text">
+            <h2>About This Page</h2>
+            <p>This page demonstrates how to structure a basic webpage using headings, paragraphs, images, and links.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="web-development.png" alt="Web Development">
+        </div>
+    </section>
+
+    <section class="centered-section">
+        <p>Learn more at <a href="https://www.w3schools.com" target="_blank">W3Schools</a>.</p>
+        <h2>Click the Button!</h2>
+        <button onclick="showAlert()">Click Me</button>
+    </section>
+
+    <script>
+        function showAlert() {
+            alert("Thanks for clicking!");
+        }
+    </script>
+</body>
+</html>
